@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<html>
+<head>
+
+    <style>
+        .contact {
+            width: 350px;
+            height: 300px;
+            box-shadow: 6px 8px 80px 0px rgba(0,0,0,0.44);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10pt;
+            animation: disko 3s infinite;
+            color:white;
+        }
+        
+
+        .lab {
+            font-family: 'Times Nw Roman', Times, serif;
+            font-size: 20pt;
+            
+        }
+
+        @@keyframes disko{ 
+            from{
+                background-color:red;
+            }
+            to{
+                background-color:blue;
+            }
+        }
+    </style>
+    <link href="~/Content/animate.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="~/Scripts/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <div class="contact" align="center">
+        <label class="lab">For queries Contact</label><br />
+        <img src="~/Content/Images/tsr.png" class="img-circle" style="height:150px;width:150px" /><br />
+        T SRINIVASULA REDDY(TSR)<br />
+        Gmail: srinut104@gmail.com<br />
+        Phone: +91 9010429088
+    </div>
+    
+</body>
+</html>
